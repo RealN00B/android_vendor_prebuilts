@@ -70,7 +70,18 @@ PRODUCT_PACKAGES += \
     MotoCalculator
 else
 PRODUCT_PACKAGES += \
-    ExactCalculator
+    ExactCalculator \
+    CalculatorGoogle
+endif
+
+# MotoClock
+ifeq ($(USE_MOTO_CLOCK),true)
+PRODUCT_PACKAGES += \
+    MotoClock
+else
+PRODUCT_PACKAGES += \
+    DeskClock \
+    deskclock
 endif
 
 # DuckDuckGo

@@ -11,6 +11,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotoClock",
+	apk: "MotoClock/MotoClock.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["deskclock" , "DeskClock"],
+}
+
+android_app_import {
 	name: "Quickpic",
 	apk: "Quickpic/Quickpic.apk",
 	presigned: true,
